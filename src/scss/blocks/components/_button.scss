@@ -1,0 +1,40 @@
+.button {
+    padding: 7px 20px;
+    width: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+
+    border: none;
+    text-align: center;
+
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+
+    &--primary {
+        color: $color-white;
+        background: $color-pink;
+
+        &:hover {
+            background: darken($color-pink, 15%);
+        }
+    }
+    &--secondary {
+        color: $color-gray-2;
+        background: $color-gray-3;
+        &:hover {
+            background: darken($color-gray-3, 5%);
+        }
+    }
+    &--circle {
+        border-radius: 28px;
+    }
+    &--rounded {
+        border-radius: 8px;
+    }
+}

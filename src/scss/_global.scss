@@ -57,7 +57,7 @@ body {
     min-width: 320px;
     overflow-x: hidden;
 
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -67,6 +67,8 @@ body {
 }
 
 .main {
+    padding-top: 155px;
+
     flex: 1 0 auto;
 }
 
@@ -81,6 +83,15 @@ body {
 }
 
 .section__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+
+    color: $color-black-2;
+}
+
+.accent {
+    color: $color-pink;
 }
 
 @media (max-width: 520px) {
