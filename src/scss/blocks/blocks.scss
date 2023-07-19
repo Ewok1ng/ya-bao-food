@@ -1,6 +1,10 @@
 // COMPONENTS
-// @import './button';
+@import './components/button';
+@import './components/logo';
 
 // SECTIONS
 @import './header';
+@import './main-slider';
+@import './reviews';
+@import './latest';
 @import './footer';

@@ -39,5 +39,6 @@
     "yargs": "^17.2.1"
   },
   "dependencies": {
+    "swiper": "^10.0.4"
   }
 }
