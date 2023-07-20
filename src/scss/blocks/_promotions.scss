@@ -1,0 +1,52 @@
+.promotions {
+    margin: 65px 0 60px;
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: 47px;
+
+        font-weight: 700;
+        font-size: 44px;
+        line-height: normal;
+        color: $color-black-1;
+
+        text-align: center;
+    }
+
+    &__items {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &__item {
+        &--large {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+
+    &__img-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    &__button {
+        margin: 0 auto;
+
+        width: 160px;
+    }
+}
