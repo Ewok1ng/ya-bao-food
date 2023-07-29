@@ -8,6 +8,13 @@
 
     background: $color-white;
     transition: box-shadow 0.2s ease-in-out;
+
+    &--cart {
+        .header__logo {
+            margin-right: auto;
+        }
+    }
+
     &__inner {
         margin: 8px 0 16px;
     }
@@ -136,6 +143,82 @@
             background: $color-white;
             border: 5px;
         }
+    }
+
+    &__order-list {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 40px;
+    }
+
+    &__order-item {
+        position: relative;
+        z-index: 10;
+
+        &--active {
+            .header__order-number {
+                color: $color-white;
+                background: $color-pink;
+                border-color: $color-pink;
+            }
+
+            .header__order-info {
+                color: $color-black-2;
+            }
+        }
+
+        &:nth-child(2) {
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-15px);
+
+                width: 80px;
+                border-top: 2px dashed $color-gray-2;
+            }
+
+            &::before {
+                right: 104px;
+            }
+
+            &::after {
+                width: 94px;
+                left: 104px;
+            }
+        }
+    }
+
+    &__order-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__order-number {
+        width: 36px;
+        height: 36px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: rgba($color-pink, 0.6);
+        border: 2px solid rgba($color-pink, 0.6);
+        border-radius: 50%;
+    }
+
+    &__order-info {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+
+        color: rgba($color-black-2, 0.6);
     }
 }
 

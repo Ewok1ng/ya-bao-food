@@ -1,4 +1,5 @@
 import { mainSlider } from './modules/mainSlider';
+import { moreSlider } from './modules/cartSlider';
 
 // header
 const header = document.querySelector('.header');
@@ -13,3 +14,6 @@ window.addEventListener('scroll', () => {
 
 // main-slider section
 mainSlider();
+
+//cart
+moreSlider();

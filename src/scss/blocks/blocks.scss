@@ -4,10 +4,21 @@
 
 // SECTIONS
 @import './header';
+@import './footer';
+
+//homepage
 @import './main-slider';
 @import './reviews';
 @import './latest';
 @import './products';
 @import './promotions';
 @import './delivery';
-@import './footer';
+
+//promo
+@import './promo';
+
+//cart
+@import './cart';
+@import './more';
+@import './sauces';
+@import './cart-controls';

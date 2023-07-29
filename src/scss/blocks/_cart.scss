@@ -1,0 +1,168 @@
+.cart {
+    margin-bottom: 40px;
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: 35px;
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: normal;
+
+        color: $color-pink;
+    }
+
+    &__items {
+        margin: -15px;
+        padding: 15px;
+        max-height: 420px;
+        overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__item {
+        padding: 25px 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border: 1px solid $color-social-border;
+        border-radius: 10px;
+
+        box-shadow: $product-shadow;
+    }
+
+    &__item-img-container {
+        margin-right: 25px;
+
+        width: 70px;
+        height: 70px;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    &__item-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__item-info {
+        margin-right: 35px;
+        flex-grow: 1;
+    }
+
+    &__item-title {
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 17px;
+
+        color: $color-black-1;
+    }
+
+    &__item-description {
+        // max-width: 400px;
+
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+
+        color: $color-gray-1;
+    }
+
+    &__item-price {
+        margin-right: 35px;
+
+        flex-shrink: 0;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: normal;
+
+        color: $color-pink;
+    }
+
+    &__counter {
+        margin-right: 40px;
+
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+
+        background: $color-gray-3;
+        border-radius: 8px;
+
+        overflow: hidden;
+    }
+
+    &__counter-button {
+        padding: 6px 16px;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        transition: background 0.2s ease-in-out;
+        svg path {
+            fill: $color-black-2;
+
+            transition: fill 0.2s ease-in-out;
+        }
+
+        &:hover {
+            background: $color-pink;
+
+            svg path {
+                fill: $color-white;
+            }
+        }
+    }
+
+    &__counter-count {
+        margin: 0 12px;
+        user-select: none;
+    }
+
+    &__item-remove {
+        padding: 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        border: none;
+        background: transparent;
+
+        cursor: pointer;
+
+        svg path {
+            fill: $color-black-1;
+            transition: fill 0.2s ease-in-out;
+        }
+
+        &:hover {
+            svg path {
+                fill: $color-pink;
+            }
+        }
+    }
+}
