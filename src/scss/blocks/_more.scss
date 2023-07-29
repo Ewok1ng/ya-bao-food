@@ -1,0 +1,140 @@
+.more {
+    margin-bottom: 40px;
+
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 17px;
+
+        color: $color-pink;
+    }
+
+    &__pagination-container {
+        position: relative;
+
+        margin: -20px;
+        padding: 20px;
+    }
+
+    &__slider {
+        width: 1110px;
+        height: auto;
+    }
+
+    &__slider-wrapper {
+    }
+
+    &__slide {
+        padding: 14px;
+
+        max-width: 330px !important;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-radius: 12px;
+        border: 1.5px solid $color-social-border;
+        background: $color-white;
+
+        user-select: none;
+        cursor: pointer;
+    }
+
+    &__slide-img-container {
+        margin-right: 15px;
+
+        width: 70px;
+        height: 70px;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    &__slide-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__slide-info {
+        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__slide-title {
+        margin-bottom: 8px;
+
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 14px;
+
+        color: $color-black-1;
+    }
+
+    &__slide-price {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: normal;
+
+        color: $color-pink;
+    }
+
+    &__slider-pagination {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        z-index: 100;
+
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: $color-black-2;
+        border-radius: 50%;
+        border: none;
+
+        transition: background 0.2s ease-in-out;
+
+        cursor: pointer;
+
+        &.swiper-button-disabled {
+            opacity: 0.7;
+
+            &:hover {
+                background: $color-black-2;
+                cursor: not-allowed;
+            }
+        }
+
+        &--prev {
+            left: -50px;
+        }
+
+        &--next {
+            right: -50px;
+        }
+
+        &:hover {
+            background: $color-pink;
+        }
+
+        svg path {
+            fill: $color-white;
+        }
+    }
+}

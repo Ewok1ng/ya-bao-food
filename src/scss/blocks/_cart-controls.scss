@@ -1,0 +1,148 @@
+.cart-controls {
+    margin-bottom: 20px;
+
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 17px;
+
+        color: $color-pink;
+    }
+
+    &__info {
+        margin-bottom: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__promocode {
+        position: relative;
+
+        display: flex;
+    }
+
+    &__promocode-input {
+        padding: 5px 154px 5px 24px;
+
+        height: 42px;
+
+        font-family: 'Montserrat', sans-serif;
+
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 28px;
+
+        color: $color-black-1;
+
+        border: 1.5px solid $color-social-border;
+        border-radius: 8px;
+
+        outline: none;
+
+        &::placeholder {
+            color: $color-gray-1;
+        }
+    }
+
+    &__promocode-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 130px;
+
+        font-size: 13px;
+        line-height: 28px;
+
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    &__total {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 17px;
+
+        color: $color-black-1;
+    }
+
+    &__total-price {
+        margin-left: 10px;
+        display: inline-block;
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: normal;
+
+        color: $color-pink;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__return {
+        display: flex;
+        align-items: center;
+
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 38px;
+        color: rgba($color-black-2, 0.8);
+
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $color-pink;
+
+            svg {
+                transform: translateX(-10px);
+            }
+
+            svg path {
+                fill: $color-pink;
+            }
+        }
+
+        svg {
+            margin-right: 15px;
+
+            transition: transform 0.2s ease-in-out;
+        }
+
+        svg path {
+            fill: rgba($color-black-2, 0.8);
+
+            transition: fill 0.2s ease-in-out;
+        }
+    }
+
+    &__order-button {
+        width: 220px;
+        height: 55px;
+
+        &:hover {
+            svg {
+                transform: translateX(10px);
+            }
+        }
+
+        svg {
+            transition: transform 0.2s ease-in-out;
+            margin-left: 15px;
+        }
+
+        svg path {
+            fill: $color-white;
+        }
+    }
+}
